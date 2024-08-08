@@ -327,6 +327,7 @@ else ifeq ($(platform), emscripten)
 					  -Drglgen_resolve_symbols=craft_rglgen_resolve_symbols
         AR=emar
 	STATIC_LINKING=1
+	SOURCES_C += $(LIBRETRO_COMM_DIR)/glsym/glsym_es2.c
 
 # GCW0
 else ifeq ($(platform), gcw0)
